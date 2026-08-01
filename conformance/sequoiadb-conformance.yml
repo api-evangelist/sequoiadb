@@ -1,0 +1,39 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/SequoiaDB (org + SequoiaDB/dds/SequoiaSQL-MySQL/SequoiaCM READMEs)
+description: >-
+  Cross-cutting protocol and interface standards SequoiaDB conforms to. SequoiaDB
+  is a distributed document database exposing several wire/interface compatibility
+  surfaces rather than a public HTTP REST API; these are the standards its own
+  documentation and repositories claim.
+standards:
+  - id: s3-object-interface
+    conforms: true
+    evidence: >-
+      SequoiaDB / SequoiaCM provide an S3-compatible object-data engine interface
+      ("兼容S3对象数据引擎接口"); SequoiaCM README states S3 interface compatibility.
+  - id: mongodb-wire-protocol
+    conforms: true
+    evidence: >-
+      The `dds` (Distributed Document Store) repository offers native MongoDB
+      protocol compatibility with full ACID transactions.
+  - id: mysql-protocol
+    conforms: true
+    evidence: >-
+      SequoiaSQL-MySQL is a SQL access engine "fully compatible with MySQL syntax
+      and functionality" (HA / Multi-Active).
+  - id: acid-transactions
+    conforms: true
+    evidence: >-
+      Main SequoiaDB repository describes a native distributed storage engine with
+      full ACID transaction support.
+  - id: rest-http-api
+    conforms: false
+    evidence: >-
+      No public HTTP REST API / OpenAPI is published for the marketing or download
+      surfaces probed; access is via native language drivers and wire-protocol
+      compatibility.
+  - id: oauth2
+    conforms: false
+  - id: rfc9457-problem-details
+    conforms: false

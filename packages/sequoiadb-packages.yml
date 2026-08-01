@@ -1,0 +1,52 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/SequoiaDB/SequoiaDB (README client-driver list)
+description: >-
+  First-party SequoiaDB client drivers. SequoiaDB ships native drivers for six
+  language runtimes; they are distributed as source in the main GitHub repository
+  (Apache-2.0) and as compiled packages via the SequoiaDB Download Center rather
+  than through the public language registries (npm / PyPI / Maven Central were not
+  found to host official artifacts at probe time).
+packages:
+  - language: java
+    registry: download-center
+    name: sequoiadb-driver
+    artifact: sequoiadb-driver-x.x.x.jar
+    url: https://download.sequoiadb.com/en/
+    source: https://github.com/SequoiaDB/SequoiaDB
+    official: true
+  - language: python
+    registry: download-center
+    name: pysequoiadb
+    url: https://download.sequoiadb.com/en/
+    source: https://github.com/SequoiaDB/SequoiaDB
+    note: Packages published for both Python 2 and Python 3.
+    official: true
+  - language: c
+    registry: download-center
+    name: sdbc
+    artifact: libsdbc.so / libstaticsdbc.a
+    url: https://download.sequoiadb.com/en/
+    source: https://github.com/SequoiaDB/SequoiaDB
+    official: true
+  - language: cpp
+    registry: download-center
+    name: sdbcpp
+    artifact: libsdbcpp.so / libstaticsdbcpp.a
+    url: https://download.sequoiadb.com/en/
+    source: https://github.com/SequoiaDB/SequoiaDB
+    official: true
+  - language: php
+    registry: download-center
+    name: sdbphp
+    artifact: libsdbphp-x.x.x.so
+    url: https://download.sequoiadb.com/en/
+    source: https://github.com/SequoiaDB/SequoiaDB
+    official: true
+  - language: csharp
+    registry: download-center
+    name: sequoiadb.dll
+    artifact: sequoiadb.dll
+    url: https://download.sequoiadb.com/en/
+    source: https://github.com/SequoiaDB/SequoiaDB
+    official: true

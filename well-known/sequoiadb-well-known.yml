@@ -1,0 +1,21 @@
+generated: '2026-07-21'
+method: none
+source: live probe of /.well-known/* on SequoiaDB public hosts
+note: >-
+  All probed /.well-known/ discovery paths returned 404 on both the marketing
+  host and the download center. No well-known documents are published. Recorded
+  for auditability; no WellKnown pointer is wired because nothing was found.
+hosts:
+  - https://www.sequoiadb.com
+  - https://download.sequoiadb.com
+documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
