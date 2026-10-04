@@ -54,8 +54,8 @@ tags:
 - NoSQL
 - Distributed Database
 - Document Database
-- Financial-Services
-- Open-Source
+- Financial Services
+- Open Source
 - Vector Database
 tags_raw:
 - Company
@@ -67,6 +67,8 @@ tags_raw:
 - Financial Services
 - Open Source
 - Vector Database
+- Financial-Services
+- Open-Source
 apis: []
 maintainers:
 - FN: Kin Lane
